@@ -1,0 +1,23 @@
+.Navbar {
+    width: 100%;
+    background-color: grey;
+    height: 40px;
+    display: table;
+    overflow: hidden;
+    float: right;
+
+    &__button {
+        display: table-cell;
+        vertical-align: middle;
+
+        &:hover{
+            background-color: #222;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: rgb(241, 241, 238);
+    }
+}
+

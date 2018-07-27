@@ -1,0 +1,20 @@
+.Promo {
+    height: 200px;
+    width: 50%;
+    display: inline-table;
+    background-color: blue;
+
+    &--item {
+        padding: 8px;
+        background-color: pink;
+        margin: 8px;
+        position: relative;
+        display: table-cell;
+
+        &-title {
+            color: navy;
+            position: 
+        }
+    }
+
+}

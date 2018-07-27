@@ -1,0 +1,13 @@
+.Promo {
+  height: 200px;
+  width: 50%;
+  display: inline-table;
+  background-color: blue; }
+  .Promo--item {
+    padding: 8px;
+    background-color: pink;
+    margin: 8px;
+    position: relative;
+    display: table-cell; }
+    .Promo--item-title {
+      color: navy; }
