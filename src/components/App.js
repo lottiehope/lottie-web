@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import logo from '../resources/logo.svg';
+import Carousel from './Carousel';
+import Card from './Card';
+import logo from '../resources/laurel-logo.png';
 import NavBar from './NavBar';
 import Promo from './Promo';
 import '../styles/App.css';
@@ -8,32 +10,30 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <NavBar />
+        <NavBar /> 
         <header className="header">
           <img src={logo} className="header__logo" alt="logo" />
-          <h1 className="header__title">Lottie Hope</h1>
-          <p className="header__subtitle">BSc Computer Science</p>
+          <h1 className="header__title">Laurel Animal Rescue</h1>
+          <p className="header__subtitle">Newton Le-Willows</p>
         </header>
         <div class="container" className="body">
           <div class="container" className="body__quote">
           <blockquote>
-            <p>"The most ridiculous example I can think of is that the 
-              people who run public education promote the stupid and idle along with the 
-              industrious—because all men are created equal, educators will gravely tell you, 
-              the children left behind suffer terrible feelings of inferiority. We know all men are 
-              not created equal in the sense some people would have us believe—some people 
-              are smarter than others, some people have more opportunity because they’re born 
-              with it, some men make more money than others, some ladies make better cakes 
-              than others—some people are born gifted beyond the normal scope of most men."
+            <p>"Keep rescuing animals, you may lose your mind but you will surely find your soul."
             </p>
-            <footer>Harper Lee, To Kill A Mockingbird</footer>
+            <footer>Unknown</footer>
           </blockquote>
           </div>
         </div>
         <div className="promos">
-          <Promo title="Working in STEM"/>
-          <Promo title="Woman in STEM"/>
+          {/* <Promo title="Working in STEM"/> */}
+          {/* <Promo title="Woman in STEM"/> */}
+          {/* <Promo title="Title 1"/>
+          <Promo title="Title 2"/> */}
         </div>
+        <Card animal="Cats" subtext="From kittens to golden oldies" btntext="See our cats" img="/res/cat.jpg" location="/cats"/>
+        <Card animal="Dogs" subtext="From puppies to big old softies" btntext="See our dogs" img="/res/dog.jpg" location="/dogs"/>
+        {/* <Carousel /> */}
       </div>
     );
   }
